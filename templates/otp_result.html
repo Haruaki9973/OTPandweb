@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>OTP認証結果</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .result {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="result">{{ result }}</div>
+
+    {% if result != "認証成功！" %}
+        <a href="/generate">新しいOTPを発行する</a>
+    {% else %}
+        <a href="https://haruaki9973.github.io/nazotoki.ex/">▶︎ 秘密ページへ進む</a>
+    {% endif %}
+</body>
+</html>
