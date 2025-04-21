@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ワンタイムパスワード発行</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .otp {
+            font-size: 36px;
+            font-weight: bold;
+            color: #d9534f;
+            margin-top: 20px;
+        }
+
+        a {
+            margin-top: 30px;
+            display: inline-block;
+            font-size: 18px;
+            text-decoration: none;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <h1>あなたのワンタイムパスワード</h1>
+    <div class="otp">{{ otp }}</div>
+
+    <a href="/otp">▶︎ OTPを入力するページへ進む</a>
+</body>
+</html>
